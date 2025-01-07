@@ -116,7 +116,7 @@ class PhoneModel {
 	async load() {
 		return new Promise((resolve, reject) => {
 			this.loader.load(
-				'/assets/model/iphone.glb',
+				'/phone-anim/assets/model/iphone.glb',
 				(gltf) => {
 					this.model = gltf.scene;
 					this.setupScreen();
