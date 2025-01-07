@@ -146,7 +146,7 @@ class PhoneModel {
 
 	createVideo() {
 		const video = document.createElement('video');
-		video.src = '/assets/video/00_Main.mp4';
+		video.src = '/phone-anim/assets/video/00_Main.mp4';
 		video.loop = true;
 		video.muted = true;
 		video.play();
