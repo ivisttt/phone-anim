@@ -145,13 +145,15 @@ class PhoneModel {
 	}
 
 	createVideo() {
-		const video = document.createElement('video');
-		video.src = '/phone-anim/assets/video/00_Main.mp4';
-		video.loop = true;
-		video.muted = true;
-		video.play();
-		return video;
-	}
+ 		const video = document.createElement('video');
+		 video.src = '/assets/video/00_Main.mp4';
+		 video.loop = true;
+		 video.autoplay = true;
+		 video.muted = true;
+		 video.playsInline = true;
+		 video.play();
+		 return video;
+}
 
 	setupAnimation() {
 		const { times, positions, rotations } = ANIMATION.KEYFRAMES;
